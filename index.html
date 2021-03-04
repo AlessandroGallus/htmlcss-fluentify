@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Fluentifyt</title>
 </head>
@@ -13,39 +14,41 @@
 
   <header>
         <div class="top">
-            <div class="logo">
-                <img src="assets/img/logo.svg" alt="Logo">
+          <div class="logo">
+              <img src="assets/img/logo.svg" alt="Logo">
+          </div>
+          <div class="lista">
+            <ul>
+              <li><a href="#">Il metodo</a></li>
+              <li><a href="#">La Tecnologia</a></li>
+              <li><a href="#">Real-Life English</a></li>
+              <li><a href="#">Soluzioni Aziendali</a></li>
+            </ul>
+          </div>
+          <div class="top-right">
+            <div class="button">
+              Diventa un tutor
             </div>
-            <div class="lista">
-              <ul>
-                <li><a href="#">Il metodo</a></li>
-                <li><a href="#">La Tecnologia</a></li>
-                <li><a href="#">Real-Life English</a></li>
-                <li><a href="#">Soluzioni Aziendali</a></li>
-              </ul>
+            <div class="button tr">
+              LOGIN
             </div>
-            <div class="top-right">
-              <div class="button">
-                Diventa un tutor
-              </div>
-              <div class="button tr">
-                LOGIN
-              </div>
+            <a href="#piano">
               <div class="button green">
                 Struttura un piano
               </div>
-            </div>
+            </a>
+          </div>
         </div>
         <div class="jumbotron half">
           <div class="titolo">
             Scegli l'inglese studiato per i professionisti
           </div> 
-          <div class="button green">STRUTTURA UN PIANO</div>
+          <a href="#piano"><div class="button green">STRUTTURA UN PIANO</div></a>
         </div>
 
   </header>
   <body>
-      <div class="gray">
+      <div class="gray" id="graytop">
           <h2>
             Le scuole di lingua tradizionali non sono efficaci
           </h2>
@@ -55,18 +58,20 @@
       </div>
       <div class="colonne">
         <div class="col">
-          <img src="assets/img/profile.svg" alt="">
-          <h3>Piano formativo configurato sul proprio livello</h3>
+          <div class="box">
+            <img src="assets/img/profile.svg" alt="">
+            <h3>Piano formativo configurato sul proprio livello</h3>
+        </div>  
           <div class="linea"></div>
           <p>Un metodo improntato sullo speaking con percorsi basati esattamente sulle esigenze personali dei partecipanti.
              Tutto parte da un accurato test di partenza per definire il livello e impostare gli obbiettivi da raggiungere.
           </p>
         </div>
         <div class="col">
-          <img src="assets/img/computer.svg" alt="">
-          <h3>Affiancamento costante del tutor</h3>
-          <br>
-          <br>
+          <div class="box">
+            <img src="assets/img/computer.svg" alt="">
+            <h3>Affiancamento costante del tutor</h3>
+          </div>
           <div class="linea"></div>
           <p>
             Scopri il syllabus, la guida per il tuo percorso.
@@ -75,10 +80,12 @@
           </p>
         </div>
         <div class="col">
-          <img src="assets/img/doc.svg" alt="">
-          <h3>
-            Monitora i tuoi progressi costantemente
-          </h3>
+          <div class="box">
+            <img src="assets/img/doc.svg" alt="">
+            <h3>
+              Monitora i tuoi progressi costantemente
+            </h3>
+          </div>
           <div class="linea"></div>
           <p>
             Controlla i tuoi progressi con dati eleaborati dal nostro sistema.
@@ -108,8 +115,26 @@
       </div>
   </body>
   <footer>
-    <div class="gray">
-
+    <div class="gray" id="piano">
+      <h2>
+        Struttura un piano
+      </h2>
+      <div class="cp">
+        <div class="bottom-right">
+          <div class="txt">
+            Sono
+          </div>  
+          <div class="selection">
+             <p>Seleziona</p> 
+             <div class="icona">
+               <i class="fas fa-caret-down"></i>
+             </div>
+          </div>
+          <div class="button green">
+              Visualizza il tuo piano
+          </div>
+      </div>
+      </div>
     </div>
   </footer>
   <div class="button green help">

@@ -133,7 +133,7 @@ header{
 }
 .col .box{
   height:260px;
-  display: inline-block;
+  display:block;
 
 }
 .box img{
@@ -153,6 +153,7 @@ header{
   border-bottom:1px solid #CECECE;; 
   display: inline-block;
   margin:25px 0 20px 0;
+
 }
 hr{
   margin:auto;

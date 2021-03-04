@@ -134,7 +134,10 @@ header{
 .col .box{
   height:260px;
   display: inline-block;
-  text-align: center;
+
+}
+.box img{
+  margin:auto;
 }
 .colonne .col h3{
   color:#85C014;
